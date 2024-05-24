@@ -60,9 +60,9 @@ const eliminarPorNombre = (req, res) => {
     })
 }
 
-server.get('/koders', registrar)
+server.post('/koders', registrar)
 server.get('/koders', listar)
-server.get('/koders/:id', eliminarPorNombre)
+server.delete('/koders/:id', eliminarPorNombre)
 
 
 server.listen(port, () => {
